@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget Tracker</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Personal Budget Tracker</h1>
+        <!-- Optional Navigation Links -->
+        <!-- <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#add-expense">Add Expense</a></li>
+                <li><a href="#view-budget">View Budget</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <!-- Introduction Section -->
+    <section>
+        <h2>Welcome to Your Personal Budget Tracker</h2>
+        <p>This tracker helps you manage your monthly expenses by allowing you to input your income and expenses, categorize them, and view a summary.</p>
+    </section>
+
+    <!-- Add Income/Expense Section -->
+    <section>
+        <h2>Add Income/Expense</h2>
+        <form>
+            <label for="income">Income:</label>
+            <input type="number" id="income" name="income"><br>
+
+            <label for="expense">Expense:</label>
+            <input type="number" id="expense" name="expense"><br>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="entertainment">Entertainment</option>
+                <!-- Add more categories as needed -->
+            </select><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Budget Summary Section -->
+    <section>
+        <h2>Budget Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows with income/expense data will go here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Personal Budget Tracker - Version 1.0</p>
+        <!-- Optional Links -->
+        <!-- <nav>
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-use">Terms of Use</a></li>
+            </ul>
+        </nav> -->
+    </footer>
+</body>
+</html>
