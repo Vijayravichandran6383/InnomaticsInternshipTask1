@@ -1,0 +1,26 @@
+function calculateFinalAmount(orderAmount) {
+    let discount = 0;
+    let shipping = 0;
+
+   
+    if (orderAmount > 1000) {
+        discount = 0.20 * orderAmount;
+    } else if (orderAmount >= 500 && orderAmount <= 1000) {
+        discount = 0.10 * orderAmount;
+    }
+
+   
+    let discountedAmount = orderAmount - discount;
+
+    
+    if (discountedAmount < 50) {
+        shipping = 10; 
+    }
+
+   
+    let finalAmount = discountedAmount + shipping;
+    return finalAmount;
+}
+
+let orderAmount = 1200;
+console.log(calculateFinalAmount(orderAmount)); 
